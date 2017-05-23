@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  </head>
+  <body ng-controller="myCtrl">
+      <p>{{message}}</p>
+
+      <ul>
+        <li ng-repeat="x in users">{{x.firstname}} {{x.lastname}}</li>
+      </ul>
+
+      <h3>Add User</h3>
+      <form>
+        <p><label>First name: </label><input type="text" ng-model="newFirstname" required></p>
+        <p><label>Last name: </label><input type="text" ng-model="newLastname" required></p>
+        <p><input type="submit" value="Submit" ng-click="addUser()"><p>
+      </form>
+
+      <script src="./common.js"></script>
+  </body>
+</html>

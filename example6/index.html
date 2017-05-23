@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <base href="/example6/">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
+  </head>
+  <body>
+      <header>
+        <h1>Ryukyu Interactive Vietnam: {{hero}}</h1>
+      </header>
+      <main ng-view>
+
+      </main>
+      <footer>
+        <small>Copyright Ryukyu Interactive Vietnam</small>
+      </footer> 
+      <script src="./common.js"></script>
+      <script src="./homeController.js"></script>
+      <script src="./listController.js"></script>
+  </body>
+</html>
